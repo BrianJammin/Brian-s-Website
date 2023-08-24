@@ -9,8 +9,7 @@ body {
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-        /* repeat(6, 1fr )*/
+    grid-template-columns: repeat(4, 1fr);   
     gap: 1.5rem;
     padding: 1.5rem;
     box-sizing: border-box;
