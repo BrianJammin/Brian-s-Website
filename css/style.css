@@ -462,8 +462,8 @@ body {
     .Intro,
     .Bout
       {
-      font-size: 30px;
-      color: red;
+      font-size: 1rem;
+      
     }
   
     .HandShake {
