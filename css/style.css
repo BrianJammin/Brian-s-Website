@@ -2,7 +2,12 @@ body {
     padding: 0;
     margin: 0;
     background-size: cover;
-    background-image: url('https://images.unsplash.com/photo-1689850969146-43cd8e188bbf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80');
+    background-image:  url('https://images.unsplash.com/photo-1689850969146-43cd8e188bbf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80');
+    background-blend-mode: darken;
+    font-family: "Poppins", sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    transition: all 0.4s ease-in;
   }
   
   .container1 {
@@ -13,11 +18,6 @@ body {
     gap: 1.5rem;
     padding: 1.5rem;
     box-sizing: border-box;
-  }
-  
-  .container1 div {
-    padding: 8px;
-    /* border: 1px solid black; */
   }
   
   .main-img1 {
@@ -51,6 +51,7 @@ body {
     -moz-animation: glow 1s ease-in-out infinite alternate;
     animation: glow 1s ease-in-out infinite alternate;
   }
+  
   @keyframes glow {
     from {
       text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #9fc5e9, 0 0 40px #9fc5e9, 0 0 50px #9fc5e9, 0 0 60px #9fc5e9, 0 0 70px #9fc5e9;
@@ -78,7 +79,7 @@ body {
   .Intro {
     /* grid-row: 2; */
     grid-column: span 4;
-    padding: 1%;
+    padding: 5%;
     border-top: 2px solid;
     /* border-bottom: 2px solid ; */
     border-image: linear-gradient(to right, teal 75%, teal 75%, teal 10%, teal 75%, teal 75%) 5;
@@ -90,6 +91,7 @@ body {
     grid-gap: 10px;
     margin: 0;
     padding: 1%;
+    border-top: 2px solid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr; 
   }
@@ -97,7 +99,6 @@ body {
     padding: 1%;
     /* grid-row: 3; */
     grid-column: span 4;
-    border-top: 2px solid;
     /* border-bottom: 2px solid ; */
     border-image: linear-gradient(to right, teal 75%, teal 75%, teal 10%, teal 75%, teal 75%) 5;
     box-shadow: 0 12px 12px rgba(0,0,0,.2);
@@ -106,7 +107,9 @@ body {
     grid-column: 1/4;
     /* grid-row-start: 1;  */
   }
-  
+  .Table1{
+    width: 100vw;
+  }
   .main-img3 {
     grid-row: 2;
     grid-column: 1;
@@ -124,32 +127,25 @@ body {
   }
   
   .Blog {
-    /* grid-row: 4; */
+    padding: 5%;
     grid-column: span 4;
     border-top: 2px solid;
-    /* border-bottom: 2px solid ; */
     border-image: linear-gradient(to right, teal 75%, teal 75%, teal 10%, teal 75%, teal 75%) 5;
     box-shadow: 0 12px 12px rgba(0,0,0,.2);
   }
   
   .ActionCall {
-    /* grid-row: 5; */
-    
     grid-column: span 5;
-    border-top: 2px solid;
-    /* border-bottom: 2px solid ; */
     border-image: linear-gradient(to right, teal 75%, teal 75%, teal 10%, teal 75%, teal 75%) 5;
     box-shadow: 0 12px 12px rgba(0,0,0,.2);
   }
   
   .Closing {
-    /* grid-row: 6; */
     align-content: center;
     height: 30vh;
     margin-bottom: 5px;
     grid-column: span 4;
     border-top: 2px solid;
-    /* border-bottom: 2px solid ; */
     border-image: linear-gradient(to right, teal 75%, teal 75%, teal 10%, teal 75%, teal 75%) 5;
     box-shadow: 0 12px 12px rgba(0,0,0,.2);
   }
@@ -168,16 +164,7 @@ body {
     color: blue;
     text-shadow: 0 12px 12px rgba(0,0,0,.5);
   }
-  
-  .Submit {
-    cursor: pointer;
-  }
-  
-  p {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-indent: 30px;
-  }
-  
+   
   @media only screen and (max-width: 2400px) {
     .StyleH3 {
       font-size: 35px;
@@ -202,7 +189,7 @@ body {
     align-content: center;
     height: 8vh;
     margin-bottom: 5px;
-    grid-column: span 5;
+    grid-column: span 4;
     border-top: 2px solid;
     /* border-bottom: 2px solid ; */
     border-image: linear-gradient(to right, teal 75%, teal 75%, teal 10%, teal 75%, teal 75%) 5;
@@ -214,6 +201,7 @@ body {
     .Name {
       height: 35vh;
     }
+    
     .Nametext {
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
       font-size: 4rem;
@@ -238,7 +226,7 @@ body {
     align-content: center;
     height: 30vh;
     margin-bottom: 5px;
-    grid-column: span 5;
+    grid-column: span 4;
     border-top: 2px solid;
     /* border-bottom: 2px solid ; */
     border-image: linear-gradient(to right, teal 75%, teal 75%, teal 10%, teal 75%, teal 75%) 5;
@@ -294,7 +282,11 @@ body {
       font-size: 3rem;
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
-  
+  .project{
+    top: 0;
+    left: 0;
+    padding: 1%;
+  }
     .StyleH3 {
       font-size: 18px;
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -336,6 +328,10 @@ body {
       /* text-size-adjust: 1px; */
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
+    
+    .Blogtext, .Introtext{
+    font-size: 1rem;
+    }
   
     .StyleH3 {
       font-size: 18px;
@@ -372,7 +368,7 @@ body {
       height: 30%;
     }
   }
-  
+
   @media only screen and (max-width: 520px) {
     .Name {
       height: 10vh;
@@ -425,12 +421,15 @@ body {
    
     .Nametext {
       height: 6vh;
-      font-size: 30px;
+      font-size: 1.5rem;
       /* text-size-adjust: 1px; */
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
      .Name {
       height: 2vh;
+    }
+    .Blogtext, .Introtext{
+      font-size: 1rem;
     }
   
     .StyleH3 {
@@ -448,6 +447,7 @@ body {
      .Bout-me-p {
     grid-row: 3;
     grid-column: span 3;
+    font-size: 1rem;
     }
     .main-img3 {
     
@@ -479,7 +479,7 @@ body {
   
     .Nametext {
       height: 10vh;
-      font-size: 25px;
+      font-size: 1rem;
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
   }
@@ -499,9 +499,177 @@ body {
     .Name {
       flex-direction: column;
       height: 10vh;
-      font-size: 10px;
+      font-size: 1.5rem;
     }
     .Nametext {
       height: 5vh;
     }
+  }
+
+  /* New addition start here. This update contains Light/Dark Mode. */
+
+  .dark-mode {
+    background-color: #333;
+    color: #f0f0f0;
+    transition: all 0.4s ease-in;
+  }
+  
+  .toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 3.75rem;
+    height: 2.13rem;
+    margin-bottom: 0.63rem;
+    margin-inline: auto;
+  }
+  
+  .toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: all 0.4s ease-in;
+    border-radius: 2.13rem;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.63rem;
+    width: 1.63rem;
+    left: 0.25rem;
+    bottom: 0.25rem;
+    background-color: white;
+    transition: 0.5s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196f3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 2px #2196f3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(1.63rem);
+  }
+
+  /* another update; projects CSS */
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    transition: all 0.4s ease-in;
+  }
+  
+  
+  h1 {
+    text-align: center;
+    margin-top: 1.25rem;
+  }
+  
+  
+  .container {
+    display: grid;
+    width: 100%;
+    min-height: calc(100vh - 4.25rem);
+    place-content: center;
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  
+  /* Write your CSS below */
+  
+  .Submit {
+    cursor: pointer;
+  }
+  
+  p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-indent: 30px;
+  }
+  
+  #slider {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    padding: 1%;
+
+  }
+  .project {
+    display: grid;
+    width: 100%;
+    /* top: 0;
+    left: 0; */
+    min-height: calc(100vh - 4.25rem);
+    place-content: center;
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  #slider img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+  }
+  
+  #slider img.active {
+    opacity: 1;
+  }
+  
+  #prev, #next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 3px solid #fff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: #717171;
+    color: #f1f1f1;
+    font-size: 32px;
+    font-stretch: condensed;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+  }
+  
+   #next:hover {
+    background-color: steelblue;
+  }
+    #prev:hover {
+      background-color: steelblue;
+  }
+  
+  button#prev {
+    left: -.5rem;
+    padding: 5px 17px 5px 15px;
+  }
+  
+  button#next {
+    right: -.5rem;
+    padding: 5px 15px 5px 17px;
   }
