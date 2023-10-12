@@ -1,18 +1,3 @@
-const body = document.querySelector('body');
-const modeToggle = document.getElementById('mode-toggle');
-const modeStatus = document.querySelector('.mode-status');
-
-function toggleMode() {
-  body.classList.toggle('dark-mode');
-
-  const modeMessage = body.classList.contains('dark-mode') ?
-    'Dark' 
-    : "Light"
-
-  modeStatus.innerText = "" + modeMessage;
-}
-
-modeToggle.addEventListener('click', toggleMode);
 
 const images = document.querySelectorAll('#slider img');
 const previousImage = document.getElementById("prev");
@@ -83,3 +68,29 @@ const observer = new IntersectionObserver(addSlideIn, options)
 items.forEach(item => {
   observer.observe(item);
 })
+
+// Future Projects
+
+// DOM Elements and Global Variables
+const addTaskBtn = document.getElementById('add-task');
+const input = document.querySelector('input');
+const taskList = document.querySelector('#task-list');
+
+
+let taskId = 0;
+let randomImgId = 1;
+
+// Add a new task to the list
+const addTask = (task) => {
+  const taskItem = document.createElement('div');
+  taskItem.classList.add('form-check', 'd-flex', 'align-items-center', 'gap-3');
+  taskItem.innerHTML = `
+    <input class="task-check" type="checkbox" id="task-${taskId}">
+    <label class="task-check-label" for="task-${taskId}">${task}</label>
+    <button type="button" class="btn-close" aria-label="Close" data-task-id="${taskId}"></button><label for="freeform">Project Details --></label><textarea id="freeform" name="freeform" rows="3" cols="30">
+Enter text here...
+</textarea>
+  `;
+  taskList.appendChild(taskItem);
+  taskId++;
+}

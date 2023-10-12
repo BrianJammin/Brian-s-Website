@@ -1,19 +1,4 @@
 
-const body = document.querySelector('body');
-const modeToggle = document.getElementById('mode-toggle');
-const modeStatus = document.querySelector('.mode-status');
-
-function toggleMode() {
-  body.classList.toggle('dark-mode');
-
-  const modeMessage = body.classList.contains('dark-mode') ?
-    'Dark' 
-    : "Light"
-
-  modeStatus.innerText = "" + modeMessage;
-}
-
-modeToggle.addEventListener('click', toggleMode);
 // Write your code below
 const items = document.querySelectorAll('.item:not(:first-child)');
 
@@ -36,3 +21,4 @@ const observer = new IntersectionObserver(addSlideIn, options)
 items.forEach(item => {
   observer.observe(item);
 })
+
