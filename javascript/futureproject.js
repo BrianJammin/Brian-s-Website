@@ -58,7 +58,14 @@ addTaskBtn.addEventListener('click', () => {
 taskList.addEventListener('click', (e) => {
   const target = e.target;
   if (target.matches('.task-check')) {
-    // Handle completion as before
+    const label = target.parentNode.querySelector('label');
+    if (target.checked) {
+    
+    label.classList.add('text-decoration-line-through','text-decoration-color-red');
+} else {
+  label.classList.remove('text-decoration-line-through');
+
+    }  
   } else if (target.matches('.btn-close')) {
     const taskId = target.getAttribute('data-task-id');
     removeTask(taskId);
